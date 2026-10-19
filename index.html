@@ -3,59 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wuhan Junji Jia Sporting Goods Store</title>
+    <title>Wuhan Junji Jia Sporting Goods Store | Sports Equipment Export Supplier</title>
+    <meta name="description" content="Wuhan Junji Jia Sporting Goods Store - a professional sporting goods export supplier based in Wuhan, China. Wholesale and retail fitness equipment, sports accessories, outdoor sports goods and training supplies for overseas buyers.">
+    <meta name="keywords" content="sporting goods, sports equipment, fitness equipment, export, wholesale, Wuhan, China supplier, training supplies">
+    <meta property="og:title" content="Wuhan Junji Jia Sporting Goods Store">
+    <meta property="og:description" content="Professional sporting goods export supplier in Wuhan, China. Wholesale & retail for overseas buyers.">
     <style>
-        *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
-        body{background:#f7f8fa;color:#333;line-height:1.6;}
-        .container{max-width:1000px;margin:0 auto;padding:30px 20px;}
-        header{text-align:center;margin-bottom:40px;padding-bottom:20px;border-bottom:1px solid #ddd;}
-        h1{font-size:26px;color:#222;margin-bottom:8px;}
-        .subtitle{color:#666;font-size:16px;}
-        .about{margin-bottom:40px;}
-        h2{font-size:20px;margin-bottom:16px;color:#222;border-left:4px solid #2563eb;padding-left:10px;}
-        .product-grid{display:grid;grid-template-columns:repeat(auto-fill, minmax(220px,1fr));gap:24px;}
-        .product-card{background:#fff;padding:20px;border-radius:8px;box-shadow:0 2px 8px #00000010;}
-        .product-card h3{margin-bottom:8px;font-size:17px;}
-        footer{margin-top:50px;text-align:center;padding-top:20px;border-top:1px solid #ddd;color:#666;font-size:14px;}
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI', Arial, sans-serif;}
+        body{background:#f5f6f8;color:#333;line-height:1.6;}
+        .container{max-width:1100px;margin:0 auto;padding:0 20px;}
+        nav{background:#1f2937;padding:14px 0;}
+        .nav-inner{max-width:1100px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
+        nav .logo{color:#fff;font-size:18px;font-weight:700;text-decoration:none;}
+        nav ul{list-style:none;display:flex;gap:24px;}
+        nav ul li a{color:#d1d5db;text-decoration:none;font-size:15px;}
+        nav ul li a:hover{color:#fff;}
+        header{background:linear-gradient(135deg,#2563eb,#1e40af);color:#fff;text-align:center;padding:60px 20px;}
+        header h1{font-size:34px;margin-bottom:10px;}
+        header p{font-size:18px;opacity:0.95;}
+        section{padding:50px 0;}
+        h2{font-size:24px;margin-bottom:24px;color:#111827;border-left:4px solid #2563eb;padding-left:12px;}
+        .about-text{font-size:16px;color:#4b5563;max-width:800px;}
+        .product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:24px;}
+        .product-card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.06);transition:transform .2s;}
+        .product-card:hover{transform:translateY(-4px);}
+        .product-card img{width:100%;height:180px;object-fit:cover;display:block;}
+        .product-card .info{padding:16px;}
+        .product-card h3{font-size:17px;margin-bottom:6px;color:#111827;}
+        .product-card p{font-size:14px;color:#6b7280;}
+        .contact{background:#fff;}
+        .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;}
+        .contact-item{background:#f9fafb;border:1px solid #e5e7eb;border-radius:8px;padding:18px;}
+        .contact-item h4{margin-bottom:8px;color:#111827;}
+        .contact-item p{font-size:14px;color:#4b5563;}
+        footer{background:#1f2937;color:#9ca3af;text-align:center;padding:24px 0;font-size:14px;}
+        @media (max-width:600px){header h1{font-size:26px;}nav ul{gap:14px;}}
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Wuhan Junji Jia Sporting Goods Store (Sole Proprietorship)</h1>
-            <p class="subtitle">Wholesale &amp; Retail Sporting Goods</p>
-        </header>
+    <nav>
+        <div class="nav-inner">
+            <a class="logo" href="/">Wuhan Junji Jia Sporting Goods</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <section class="about">
+    <header id="home">
+        <h1>Wuhan Junji Jia Sporting Goods Store (Sole Proprietorship)</h1>
+        <p>Wholesale &amp; Retail Sporting Goods | Export Supplier in Wuhan, China</p>
+    </header>
+
+    <section id="about">
+        <div class="container">
             <h2>About Us</h2>
-            <p>We are a local store based in Wuhan, China. We supply various sporting goods for overseas customers. We provide export sales service to buyers from United States and other regions. We accept bank transfer for orders.</p>
-        </section>
+            <p class="about-text">We are a local store based in Wuhan, China. We supply various sporting goods for overseas customers, providing export sales service to buyers from the United States and other regions. We support wholesale and retail orders and accept bank transfer for payments. Orders are handled via direct communication to ensure quality and reliable service.</p>
+        </div>
+    </section>
 
-        <section>
+    <section id="products">
+        <div class="container">
             <h2>Our Products</h2>
             <div class="product-grid">
                 <div class="product-card">
-                    <h3>Fitness Equipment</h3>
-                    <p>Home gym accessories, workout gears</p>
+                    <img src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Fitness equipment - dumbbells and home gym accessories">
+                    <div class="info">
+                        <h3>Fitness Equipment</h3>
+                        <p>Home gym accessories, dumbbells, workout gears</p>
+                    </div>
                 </div>
                 <div class="product-card">
-                    <h3>Sports Accessories</h3>
-                    <p>Protective pads, sports bags, wristbands</p>
+                    <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sports accessories - protective pads and bags">
+                    <div class="info">
+                        <h3>Sports Accessories</h3>
+                        <p>Protective pads, sports bags, wristbands</p>
+                    </div>
                 </div>
                 <div class="product-card">
-                    <h3>Outdoor Sports Goods</h3>
-                    <p>Camping &amp; outdoor activity supplies</p>
+                    <img src="https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Outdoor sports goods - camping and outdoor supplies">
+                    <div class="info">
+                        <h3>Outdoor Sports Goods</h3>
+                        <p>Camping &amp; outdoor activity supplies</p>
+                    </div>
                 </div>
                 <div class="product-card">
-                    <h3>Training Supplies</h3>
-                    <p>Resistance bands, training accessories</p>
+                    <img src="https://images.pexels.com/photos/221210/pexels-photo-221210.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Training supplies - resistance bands and training accessories">
+                    <div class="info">
+                        <h3>Training Supplies</h3>
+                        <p>Resistance bands, training accessories</p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <footer>
-            <p>Business Address: Huangpi District, Wuhan, Hubei, China</p>
-        </footer>
-    </div>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h4>Business</h4>
+                    <p>Wholesale &amp; Retail Sporting Goods Export</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Location</h4>
+                    <p>Huangpi District, Wuhan, Hubei, China</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Orders</h4>
+                    <p>Orders handled via direct communication, bank transfer accepted</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Service Area</h4>
+                    <p>Export to United States and overseas buyers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Wuhan Junji Jia Sporting Goods Store. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
