@@ -15,7 +15,7 @@
         nav{background:#1f2937;padding:14px 0;}
         .nav-inner{max-width:1100px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
         nav .logo{color:#fff;font-size:18px;font-weight:700;text-decoration:none;}
-        nav ul{list-style:none;display:flex;gap:24px;}
+        nav ul{list-style:none;display:flex;gap:24px;flex-wrap:wrap;}
         nav ul li a{color:#d1d5db;text-decoration:none;font-size:15px;}
         nav ul li a:hover{color:#fff;}
         header{background:linear-gradient(135deg,#2563eb,#1e40af);color:#fff;text-align:center;padding:60px 20px;}
@@ -25,17 +25,23 @@
         h2{font-size:24px;margin-bottom:24px;color:#111827;border-left:4px solid #2563eb;padding-left:12px;}
         .about-text{font-size:16px;color:#4b5563;max-width:800px;}
         .product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:24px;}
-        .product-card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.06);transition:transform .2s;}
+        .product-card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.06);transition:transform .2s;text-decoration:none;color:inherit;display:block;}
         .product-card:hover{transform:translateY(-4px);}
         .product-card img{width:100%;height:180px;object-fit:cover;display:block;}
         .product-card .info{padding:16px;}
         .product-card h3{font-size:17px;margin-bottom:6px;color:#111827;}
         .product-card p{font-size:14px;color:#6b7280;}
+        .faq-list{max-width:820px;}
+        .faq-item{background:#fff;border:1px solid #e5e7eb;border-radius:8px;margin-bottom:12px;padding:18px 20px;}
+        .faq-item h4{margin-bottom:6px;color:#111827;font-size:16px;}
+        .faq-item p{font-size:15px;color:#4b5563;}
         .contact{background:#fff;}
         .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;}
         .contact-item{background:#f9fafb;border:1px solid #e5e7eb;border-radius:8px;padding:18px;}
         .contact-item h4{margin-bottom:8px;color:#111827;}
         .contact-item p{font-size:14px;color:#4b5563;}
+        .btn{display:inline-block;background:#2563eb;color:#fff;padding:10px 22px;border-radius:6px;text-decoration:none;font-size:15px;margin-top:16px;}
+        .btn:hover{background:#1e40af;}
         footer{background:#1f2937;color:#9ca3af;text-align:center;padding:24px 0;font-size:14px;}
         @media (max-width:600px){header h1{font-size:26px;}nav ul{gap:14px;}}
     </style>
@@ -48,6 +54,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#products">Products</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -62,40 +69,70 @@
         <div class="container">
             <h2>About Us</h2>
             <p class="about-text">We are a local store based in Wuhan, China. We supply various sporting goods for overseas customers, providing export sales service to buyers from the United States and other regions. We support wholesale and retail orders and accept bank transfer for payments. Orders are handled via direct communication to ensure quality and reliable service.</p>
+            <a class="btn" href="/company-profile.html">View Company Profile</a>
         </div>
     </section>
 
     <section id="products">
         <div class="container">
             <h2>Our Products</h2>
+            <p class="about-text" style="margin-bottom:20px;">Click a category to view product details.</p>
             <div class="product-grid">
-                <div class="product-card">
+                <a class="product-card" href="/products.html#fitness">
                     <img src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Fitness equipment - dumbbells and home gym accessories">
                     <div class="info">
                         <h3>Fitness Equipment</h3>
                         <p>Home gym accessories, dumbbells, workout gears</p>
                     </div>
-                </div>
-                <div class="product-card">
+                </a>
+                <a class="product-card" href="/products.html#accessories">
                     <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sports accessories - protective pads and bags">
                     <div class="info">
                         <h3>Sports Accessories</h3>
                         <p>Protective pads, sports bags, wristbands</p>
                     </div>
-                </div>
-                <div class="product-card">
+                </a>
+                <a class="product-card" href="/products.html#outdoor">
                     <img src="https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Outdoor sports goods - camping and outdoor supplies">
                     <div class="info">
                         <h3>Outdoor Sports Goods</h3>
                         <p>Camping &amp; outdoor activity supplies</p>
                     </div>
-                </div>
-                <div class="product-card">
+                </a>
+                <a class="product-card" href="/products.html#training">
                     <img src="https://images.pexels.com/photos/221210/pexels-photo-221210.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Training supplies - resistance bands and training accessories">
                     <div class="info">
                         <h3>Training Supplies</h3>
                         <p>Resistance bands, training accessories</p>
                     </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h4>How can I place an order?</h4>
+                    <p>Orders are handled via direct communication. Please contact us to confirm the products, quantity and pricing for your order.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What payment methods do you accept?</h4>
+                    <p>We accept bank transfer (including US ACH domestic transfer) for export orders.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you support wholesale orders?</h4>
+                    <p>Yes, we support both wholesale and retail orders. Please contact us with your required quantity for a quotation.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you ship internationally?</h4>
+                    <p>Yes, we provide export sales service to buyers in the United States and other regions, with international shipping.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How can I contact you?</h4>
+                    <p>Please reach out via direct communication (WhatsApp) to discuss your order. We will respond promptly.</p>
                 </div>
             </div>
         </div>
